@@ -1,7 +1,7 @@
 #
 # ----------------------------------------------
 
-***This is the first attempt to combine Electron with [R-Portable](https://sourceforge.net/projects/rportable/files/R-Portable/) (version 3.4.0) and [RStudio Shiny](https://cran.r-project.org/web/packages/shiny/index.html) package to deliver Electron Applications that run standalone with R and Shiny.***
+***This is the first attempt to combine Electron with [R-Portable-Win](https://github.com/rana2hin/R-Portable-Win) or [R-Portable](https://sourceforge.net/projects/rportable/files/R-Portable/) (version 4.1.0) and [RStudio Shiny](https://cran.r-project.org/web/packages/shiny/index.html) package to deliver Electron Applications that run standalone with R and Shiny.***
 
 # ----------------------------------------------
 
@@ -29,20 +29,21 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/ColumbusCollaboratory/electron-quick-start
+git clone https://github.com/rana2hin/electron-quick-start
 # Install Electron Packager (if first time)
+npm install electron -g
 npm install electron-packager -g 
 # Go into the repository
 cd electron-quick-start
 # Install dependencies
 npm install
-# Run the app
-npm start
 # Build the Executable/App
 cd electron-quick-start
 npm run package-win
 OR
-npm run package-mac 
+npm run package-mac
+# If you directly wanna Run the app
+npm start
 ```
 
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
